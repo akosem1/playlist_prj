@@ -1,0 +1,147 @@
+
+
+.green{background-color: green;}
+.blue{background-color: blue;}
+.grey{background-color: grey;}
+
+body{
+	background-color:  black;
+}
+
+.centered{
+	float: none;
+    margin: 0 auto;
+}
+
+#playContainer{
+	 margin: 0 auto;
+	 
+
+		/* position: absolute; */
+/* width: 80%; */
+/* width: 900px; */
+/* position: fixed;
+z-index: 1001;
+    background-color: black; */
+
+}
+
+main{
+		    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+#player_row{
+
+	background-color: red;
+	/* width: 50%; */
+	max-height: 250px;
+	border-radius: 15rem;
+/* 	max-width: 800px;	
+	min-width: 800px;	 */
+}
+
+.albumShow{
+	display: inline-block;
+	margin: .5rem;
+	border-style: dashed;
+
+
+}
+
+.albumShow img, h3{
+width: 70%;
+}
+
+.btnDelete{
+	width: 70px;
+ position: relative;
+ left:100%; top: -150px;
+	/* display:  grid; */
+}
+
+#audioContainer{
+	padding:  .5rem;
+
+}
+
+audio{
+		width: 100%;
+	}
+	
+#songslist{
+	max-height: 150px;
+	max-width: 300px;
+	overflow-y: auto;
+}
+
+
+
+    #container {
+      position: fixed;top: 0;bottom: 0;left: 0;right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0,0,0,.5);
+    }
+    #containerNewPlayList {
+      position: relative;
+      max-width: 80%;
+      padding: 1rem;
+      /* border: 1px solid #000; */
+      /* background-color: #fff; */
+    }
+
+    #containerNewPlayList h2 {
+      font-size: 2rem;
+    }
+
+    #containerNewPlayList label {
+      font-size: 1.5rem;
+    }
+
+    #containerNewPlayList button {
+      
+      margin: 0.5rem;
+    }
+
+
+    #remove_btn {
+      position: absolute;
+      top: .5rem;right: .5rem;
+    }
+    .box {
+  width: 250px; height: 250px;
+  position: relative;
+    border: 2px solid #000;
+    background: #ccc;
+}
+
+.songNameBtn{
+	display:  block;
+
+}
+
+
+/* #diskSpin{
+height: 80%;
+width: 80%;
+} */
+
+
+.diskSpin {
+    /* position: absolute; */
+/*     top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px; */
+/*     margin:-60px 0 0 -60px; */
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+

@@ -1,0 +1,133 @@
+
+.bold_str{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.css_btn_class {
+	font-size:15px;
+	/* font-family:Arial; */
+	/* font-weight:normal; */
+
+	border-radius:11px;
+	border:3px solid #d83526;
+	padding:3px 9px;
+	text-decoration:none;
+
+	/* filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100'); */
+	/* background:-webkit-gradient( linear, left top, left bottom, color-stop(39%, #fe1a00), color-stop(66%, #ce0100) ); */
+	background-color:#000;
+	color:#ffffff;
+	/* display:inline-block; */
+	text-shadow:1px 1px 0px #b23e35;
+
+ 	box-shadow:inset 1px 1px 0px 0px #f29c93;
+}.css_btn_class:hover {
+
+	/* filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00'); */
+
+	background-color:#ce0100;
+	color: #00ff1d;
+}
+
+.css_btn_class:active {
+	position:relative;
+	top:-5px;left:5px;
+}
+
+
+
+
+
+#songslist::-webkit-scrollbar {
+  width: 10px;
+}
+#songslist::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 10px;
+}
+#songslist::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #c9500d;  
+}
+#songslist::-webkit-scrollbar-thumb:hover {
+  background: #00ff1d;  
+}
+
+/* 00ff1d */
+ 
+@media screen and  (max-width: 666px) {
+
+
+	 #diskSpin{
+		display: none;
+	}
+ #audioContainer{
+ 	width: 80%;
+
+ }
+ .albumShow{
+ 	width: 100%;
+ }
+  #songslist{
+ 	 
+ 	height: 100px;
+ }
+
+}
+
+
+@media screen  and (max-width: 667px) {
+/* #playContainer {
+	width: 80%;
+	}
+	.css_btn_class {
+		    font-size: 15px;
+	} */
+	
+	  #songslist{
+ 	 
+ 	height: 100px;
+ }
+}
+
+@media screen  and (max-width: 767px)  {
+/* #playContainer {
+	width: 80%;
+	}
+	.css_btn_class {
+		    font-size: 15px;
+	} */
+	#player_row{
+	height: 200px;
+	}
+ #songslist{
+ 	 
+ 	height: 150px;
+ }
+
+	#diskSpin{
+		height: 150px;
+	}
+ 
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	/* #playContainer {
+	width: 80%;
+	} */
+
+	#diskSpin{
+		height: 150px;
+	}
+}
+
+@media screen and  (min-width: 992px) {
+	/* #playContainer {
+	width: 60%;
+	} */
+		#diskSpin{
+		height: 200px;
+	}
+
+}
